@@ -147,12 +147,6 @@ $(document).ready(function () {
 	$('.modal_close').on('click', function () {
 		$('.modal').removeClass('on');
 		$('.modal_container').removeClass('on');
-	});	
-	// 2021.01.05 추가
-	// 브라우저 가로 크기가 줄어도 팝업 오픈 시 페이징 숫자 영역 그대로
-	if ($(".btnWrap4").innerWidth() > $(window).innerWidth()) {
-		console.log('aaa');
-		$(".modalContainer .modalWrap1, .modalContainer .modalWrap2").css('width', '100%');
-	} 
+	});
 });
 

@@ -92,14 +92,16 @@ $(document).ready(function() {
 	});
 	// 2021.01.05 추가 (박병현)
 	// 브라우저 가로 크기가 줄어도 팝업 오픈 시 페이징 숫자 영역 그대로
-	$(window).resize(function() {
-		alert('asdf')
-		modalWrap1의 크기와 modalWrap2의 크기가 같아서 하나만 작성해도 두개 다 적용
+	var popupResize = function() {
+		// modalWrap1의 크기와 modalWrap2의 크기가 같아서 하나만 작성해도 두개 다 적용
 		if ($(".modalContainer .modalWrap1").width() > $(window).width()) {
 			$(".modalContainer .btnWrap4 .btnLeft").css('margin-left', '25.8195vw');
 		} else {
 			$(".modalContainer .btnWrap4 .btnLeft").css('margin-left', '222px');
 		}
+	};
+	$(window).resize(function() {
+		popupResize();
 	});
 	// 2021.01.05 추가 끝(박병현)
 });
