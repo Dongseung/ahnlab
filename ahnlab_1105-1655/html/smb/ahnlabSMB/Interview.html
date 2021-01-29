@@ -112,7 +112,8 @@
 					<div class="swiper-container swiperVideo">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide video01">
-								<iframe id="youTubePlayer1" width="1280" height="720" src="https://www.youtube.com/embed/6iWya2rJiCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe id="youTubePlayer1" width="1280" height="720" src="https://www.youtube.com/embed/SXT2fibNlJY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<!-- <iframe id="youTubePlayer1" width="1280" height="720" src="https://www.youtube.com/embed/6iWya2rJiCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>								 -->
 							</div>
 						</div>
 						<!-- Add Pagination -->
@@ -256,8 +257,8 @@
 							</div>
 						</div>
 						<div class="swiper-pagination"></div>
-						<div class="swiper_start_btn off"></div>
-						<div class="swiper_stop_btn"></div>
+						<div class="swiper_start_btn"></div>
+						<div class="swiper_stop_btn off"></div>
 					</div>
 				</div>
 			</section>
@@ -656,27 +657,35 @@
 				$('.swiper-slide').hover(
 					function(){
 						cardSlide.autoplay.stop();
-						$('.interview .swiper_stop_btn').addClass('off')
-						$('.interview .swiper_start_btn').removeClass('off')
-					},function(){
-						cardSlide.autoplay.start();
+						// $('.interview .swiper_stop_btn').addClass('off')
+						// $('.interview .swiper_start_btn').removeClass('off')
 						$('.interview .swiper_start_btn').addClass('off')
 						$('.interview .swiper_stop_btn').removeClass('off')
+					},function(){
+						cardSlide.autoplay.start();
+						// $('.interview .swiper_start_btn').addClass('off')
+						// $('.interview .swiper_stop_btn').removeClass('off')
+						$('.interview .swiper_stop_btn').addClass('off')
+						$('.interview .swiper_start_btn').removeClass('off')
 					}
 				);
 				
 				$('.swiperCard .swiper_start_btn').click(
 					function(){
 						cardSlide.autoplay.start();
-						$('.interview .swiper_start_btn').addClass('off')
-						$('.interview .swiper_stop_btn').removeClass('off')
+						// $('.interview .swiper_start_btn').addClass('off')
+						// $('.interview .swiper_stop_btn').removeClass('off')
+						$('.interview .swiper_stop_btn').addClass('off')
+						$('.interview .swiper_start_btn').removeClass('off')
 					}
 					);
 				$('.swiperCard .swiper_stop_btn').click(
 					function(){
 						cardSlide.autoplay.stop();
-						$('.interview .swiper_stop_btn').addClass('off')
-						$('.interview .swiper_start_btn').removeClass('off')
+						// $('.interview .swiper_stop_btn').addClass('off')
+						// $('.interview .swiper_start_btn').removeClass('off')
+						$('.interview .swiper_start_btn').addClass('off')
+						$('.interview .swiper_stop_btn').removeClass('off')
 					}
 				);
 

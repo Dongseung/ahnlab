@@ -97,15 +97,15 @@
 						<div class="title3">
 							<table>
 								<tr>
-									<td>이벤트 기간&nbsp</td>
+									<td class="title3_1">이벤트 기간&nbsp</td>
 									<td>2020년 11월 09일 ~ 12월 31일</td>
 								</tr>
 								<tr>
-									<td>경품 혜택</td>
+									<td class="title3_1">경품 혜택</td>
 									<td>신세계 상품권 3만 원권 (모바일 쿠폰)</td>
 								</tr>
 								<tr>
-									<td>경품 발송</td>
+									<td class="title3_1">경품 발송</td>
 									<td>2021년 1월 7일 (일괄 발송)</td>
 								</tr>
 							</table>
@@ -115,14 +115,14 @@
 				</section>
 				<section class="howto">
 					<img src="/images/smb_m/event2/event-apply.png" alt="이벤트 응모 안내" class="event-apply" width="333" height="65" />
-					<div class="how">
+					<div class="how how02">
 						<div class="how-img"></div>
 						<p>
 							우리기업에 도입하고 싶은 <br />제품의 예상 견적 신청하기
 						</p>
 					</div>
 					<div class="img-down"></div>
-					<div class="how">
+					<div class="how how04">
 						<div class="how-img"></div>
 						<p>견적신청 개인정보 입력후 <br />이벤트 응모</p>
 					</div>
@@ -132,25 +132,25 @@
 						<p>견적서 이메일 수신 후 <br />구매처에서 이벤트 대상 제품 구매 </p>
 					</div>
 					<div class="img-down"></div>
-					<div class="how">
+					<div class="how how08">
 						<div class="how-img"></div>
 						<p>구매 제품 설치 후 서비스 이용</p>
 					</div>
 				</section>
 				<section class="product-item">
-					<div class="item">
+					<div class="item item01">
 						<div class="item-img"></div>
 						<h6>V3 Office Security</h6>
 						<h5>(Windows, Mac PC)</h5>
 						<p>보안 관리자 없이도 <br />빠른 보안위협대응</p>
 					</div>
-					<div class="item">
+					<div class="item item02">
 						<div class="item-img"></div>
 						<h6>V3 Office Server Security</h6>
 						<h5>(Windows, Linux)</h5>
 						<p>다양한 기업 서비스 환경 검증으로 <br />정확하고 신속한 서버 방역</p>
 					</div>
-					<div class="item">
+					<div class="item item03">
 						<div class="item-img"></div>
 						<h6>Office Security Assessment</h6>
 						<h5>(Windows)</h5>
@@ -159,13 +159,13 @@
 				</section>
 				<section id="buy">
 					<img src="/images/smb_m/event2/buy-info.png" alt="제품 구매처 안내" class="buy-info" width="333" height="65" />
-					<div class="buy-box">
+					<div class="buy-box buy-box02">
 						<div class="buy-ico"></div>
 						<a href="https://shop.ahnlab.com/jump/fp/page.do?cmd=submain&cateSeq=200&newCateSeq=394&utm_source=smbplace&utm_medium=event&utm_campaign=%EA%B5%AC%EB%A7%A4%EC%9D%B4%EB%B2%A4%ED%8A%B8" target="_blank">
 							<img src="/images/smb_m/event2/go-online.png" alt="온라인 구매하러가기" class="buy-go" width="233" height="94" />
 						</a>
 					</div>
-					<div class="buy-box">
+					<div class="buy-box buy-box03">
 						<div class="buy-ico"></div>
 						<a href="https://www.ahnlab.com/kr/site/product/purchase/purchasePartner1.do" target="_blank">
 							<img src="/images/smb_m/event2/go-offline.png" alt="오프라인 구매하러가기" class="buy-go" width="153" height="68" />
@@ -203,28 +203,28 @@
 						<h5>귀사에 도입하고자 하는 제품의 수량을 입력하시고 <br /><span>예상 견적을 확인하세요</span></h5>
 					</div>
 					<table>
-						<tr>
-							<th scope="row">상품</th>
+						<tr class="prodName">
+							<th scope="row" class="modal_title01">상품</th>
 							<th scope="col">V3 Office<br /> Security</th>
 							<th scope="col">V3 Office Server<br /> Security</th>
 							<th scope="col">Office Security<br /> Assessment</th>
 						</tr>
-						<tr>
-							<th scope="row">수량</th>
+						<tr class="prodEa">
+							<th scope="row" class="modal_title01">수량</th>
 							<td>
 								<input type="number" id="p1Number" placeholder="구매 수량 입력">
 							</td>
 							<td><input type="number" id="p2Number" placeholder="구매 수량 입력"></td>
 							<td><input type="number" id="p3Number" placeholder="구매 수량 입력"></td>
 						</tr>
-						<tr>
-							<th scope="row">예상 견적<br /><span>(정상가)</span></th>
+						<tr class="prodPrice">
+							<th scope="row" class="modal_title01">예상 견적<br /><span>(정상가)</span></th>
 							<td id="p1Price">&#8361;<span>0</span>원</td>
 							<td id="p2Price">&#8361;<span>0</span>원</td>
 							<td id="p3Price">&#8361;<span>0</span>원</td>
 						</tr>
-						<tr>
-							<th scope="row">최종 예상 견적<br /><span>(정상가)</span></th>
+						<tr class="AllProdPrice">
+							<th scope="row" class="modal_title01">최종 예상 견적<br /><span>(정상가)</span></th>
 							<td colspan="3" id="pAllPrice">&#8361;<span>0</span>원</td>
 						</tr>
 					</table>
@@ -240,7 +240,7 @@
 					<a href="https://shop.ahnlab.com/jump/jsp/fp/main.jsp" onclick="gtag('event','ahnlab')" target="_blank" title="새창열림"><img src="/images/smb_m/common/footer_logo.png" alt="ahnlab" /></a>
 				</p>
 				<div class="footerMenu">
-					<p class="footerMenuLi01"><a href="https://www.ahnlab.com/kr/site/etc/policy.do" target="_blank" title="새창열림">개인정보처리방침</a></p>
+					<p class="footerMenuList01"><a href="https://www.ahnlab.com/kr/site/etc/policy.do" target="_blank" title="새창열림">개인정보처리방침</a></p>
 					<p><a href="https://www.ahnlab.com/kr/site/etc/agreement.do" target="_blank" title="새창열림">이용약관</a></p>
 					<p><a href="https://www.ahnlab.com/kr/site/etc/contactUs.do" target="_blank" title="새창열림">Contact US</a></p>
 					<p><a href="javascript:;" onclick="alert('Coming Soon')">뉴스레터 신청</a></p>
